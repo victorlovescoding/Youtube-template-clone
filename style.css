@@ -1,0 +1,400 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+/* 手機版nav */
+.mobile{
+    display: none;
+}
+/* 電腦 */
+.page{
+    display: flex;
+    
+}
+.left::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+.left:hover::-webkit-scrollbar-thumb{
+    background-color: #909090;
+    border-radius: 50px;
+}
+.right::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+.right::-webkit-scrollbar-thumb{
+    background-color: #909090;
+    border-radius: 50px;
+}
+
+/* 左邊 */
+.left{
+    width: 13%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.left nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 1.6rem;
+
+}
+.left nav .hamburger{
+    display: block;
+    width: 9%;
+    margin-right: 2rem;
+   
+}
+.left nav a{
+    display: block;
+
+    
+}
+.left nav .logo{
+    display: block;
+    width: 70%;
+
+
+}
+
+.left nav{
+    width: 13%;
+    position: fixed;
+    background-color: white;
+}
+.logo{
+    width: 50%;
+}
+
+.page .list a{
+    display: flex;
+    margin-left: 25px;
+    margin-right: 5px;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.page .list img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.page .list p{
+    width: 100%;
+    padding-top: 6px;
+    margin-left: 25px;
+    color: black;
+    font-size: 14px;
+}
+.space{
+    padding-top: 65px;
+}        
+.subContent{
+    padding: 15px 15px;
+}
+hr{
+    margin: 10px 3px;
+}
+.subContent{
+    padding: 15px 15px;
+}
+
+/* 右邊區塊 */
+.right{
+    width: 87%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #F9F9F9;
+}
+::placeholder{
+    font-size: 18px;
+}
+.header{
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 87%;
+    border-bottom: 1px solid #CECECE;
+    z-index: 2;
+    
+}
+.right .header hr{
+    border:1px solid #E5E5E5 ;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.search{
+    display: flex;
+    margin: .8rem 5rem;
+    height: 40px;
+}
+::placeholder{
+    padding: 5px 5px;
+}
+.search button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    border: 1px solid #D3D3D3;
+    width: 10%;
+}
+.search input{
+    width: 600px;
+    border: 1px solid #D3D3D3;
+}
+.channel img{
+    width: 35px;
+    border-radius: 50%;
+}
+.menuIcon{
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+.menuIcon a{
+    margin: 0px 13px;
+}
+
+/* category */
+.page .category{
+    display: flex;
+
+    overflow-x: auto;
+}
+.page .category button{
+    white-space:nowrap;
+    
+    border-radius: 50px;
+    border: 1px  #CECECE;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    padding: 5px 10px;
+    margin-top: 5px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   margin-bottom: 15px;
+    margin-right: 15px;
+}
+.page .category .active{
+    background-color: #030303;
+    color: white;
+}
+
+/* video */
+.space2{
+    padding-top: 146px;
+    background-color: #F9F9F9;
+}
+.video{
+    background-color: #F9F9F9;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}
+.videoSection{
+    display: block;
+}
+.singleVideo{
+    margin: 20px 10px;            
+}
+.videoInformation{
+    display: flex;
+
+    width: 100%;
+}
+.videoInformation a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+.videoInformation .videoTitle{
+    font-size: 22px;
+}
+.channelText{
+    margin-left: 25px;
+}
+.channelIcon img{
+    border-radius: 50%;
+}
+.singleVideo .pic{
+    position: relative;
+}
+.singleVideo .time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 6px;
+    padding: 3px;
+    font-size: 12px;
+
+}
+.contentHr{
+    border: 2px solid #D3D3D3; 
+    width: 90%; 
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.videoTitle{
+    color: #030303;
+}
+.channelName{
+    color: #606060;
+}
+.view{
+    color: #606060;
+}
+
+@media screen and (max-width:1024px){
+    /* 手機版 */
+    .page{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: .5rem;
+    }
+    nav *{
+        display: block;
+    }
+    nav div{
+        display: flex;
+    }
+    nav .mobileLogo{
+        width: 20vw;
+        object-fit: contain;
+    }
+    nav div a{
+        margin: auto .3rem;
+    }
+    nav div a:nth-child(1) i{
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+    nav div:last-child img{
+        width: 5vw;
+        border-radius: 50%;
+    }
+    nav.category{
+        overflow-x: auto;
+    }
+    nav.category button{
+        white-space:nowrap;
+        border-radius: 50px;
+        border: 1px  #CECECE;
+        cursor: pointer;
+        background-color: #F2F2F2;
+        padding: 5px 10px;
+        margin-top: 5px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    nav.category .active{
+        background-color: #030303;
+        color: white;
+    }
+    .mobile .list{
+        background-color: #FFFFFF;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile .list img{
+       width: 35px;
+    }
+    .mobile .list a{
+        margin: .3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #030303;
+    }
+    
+}
+@media screen and (max-width:500px){
+    /* 手機版 */
+    .page{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: .5rem;
+    }
+    nav *{
+        display: block;
+    }
+    nav div{
+        display: flex;
+    }
+    nav .mobileLogo{
+        width: 30vw;
+        object-fit: contain;
+    }
+    nav div a{
+        margin: auto .3rem;
+    }
+    nav div a:nth-child(1) i{
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+    nav div:last-child img{
+        width: 8vw;
+        border-radius: 50%;
+    }
+    nav.category{
+        overflow-x: auto;
+    }
+    nav.category button{
+        white-space:nowrap;
+        border-radius: 50px;
+        border: 1px  #CECECE;
+        cursor: pointer;
+        background-color: #F2F2F2;
+        padding: 5px 10px;
+        margin-top: 5px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    nav.category .active{
+        background-color: #030303;
+        color: white;
+    }
+    .mobile .list{
+        background-color: #FFFFFF;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile .list img{
+       width: 35px;
+    }
+    .mobile .list a{
+        margin: .3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #030303;
+    }
+    
+}
